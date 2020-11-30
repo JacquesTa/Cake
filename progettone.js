@@ -2,7 +2,7 @@
 
 document.querySelector('#buttonYes').addEventListener('click', yesLike);
 document.querySelector('#buttonNo').addEventListener('click', noLike);
-document.querySelector('#buttonReset').addEventListener('click', resetLike);
+document.querySelector('#buttonReset').addEventListener('click', resetLike); 
 
 let cakes = ["Broccoli","ChocolateCake","Cheesecake","JamTart"];
 let messages = ["ok", "Excellent Choice!", "Great Choice!", "Fantastic choice!"];
@@ -18,6 +18,7 @@ let selecty = false;
 
 //Button functions 
 function noLike() {
+    console.log('hey');
     if (yesChoice === false){
         noChoice = true;
         document.querySelector('#writeMe').textContent='Very sorry for you, enjoy your broccoli...';
